@@ -1,0 +1,165 @@
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #0f0514;
+    font-family: monospace;
+  }
+   
+  .loader {
+    font-size: 25vmin;
+    width: 1em;
+    height: 1em;
+    background-color: #21346e;
+    border-radius: 1em;
+    position: relative;
+  }
+  .loader::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 0.1rem solid #21346e;
+    border-radius: inherit;
+  }
+  .loader.loaded::after {
+    opacity: 0;
+    border-color: #3d7af5;
+    transform: scale(1.6);
+    transition: opacity 0.6s ease, transform 0.6s ease-out;
+  }
+  .loader .meter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    overflow: hidden;
+  }
+  .loader .meter .fill {
+    background-color: #3d7af5;
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    transform: translateY(1.5vh);
+    filter: drop-shadow(0 0 1rem black);
+    transition: height 0.2s linear;
+  }
+  .loader .meter .fill svg {
+    color: #3d7af5;
+    position: absolute;
+    transform: translateY(calc(-100% + 1px));
+    width: 200%;
+    animation: waves 4s ease-in-out infinite alternate;
+  }
+  @keyframes waves {
+    0% {
+      left: -10%;
+      top: 2vh;
+    }
+    50% {
+      top: 0vh;
+    }
+    100% {
+      left: -60%;
+      top: 1vh;
+    }
+  }
+  .loader .meter .fill-text {
+    position: absolute;
+    z-index: 15;
+    top: 50%;
+    left: 50%;
+    font-size: 1rem;
+    transform: translate(-50%, -50%);
+    color: rgba(15, 5, 20, 0.9);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 900;
+    pointer-events: none;
+  }
+  .loader .ball {
+    position: absolute;
+    background-color: #21346e;
+    top: 50%;
+    left: 0;
+    border-radius: inherit;
+  }
+  .loader .ball.a {
+    width: 0.25em;
+    height: 0.25em;
+    transform-origin: 1.5em;
+    animation: rotate-a 4s linear infinite;
+  }
+  .loader .ball.b {
+    width: 0.3em;
+    height: 0.3em;
+    transform-origin: 1em;
+    animation: rotate-b 7s linear reverse infinite;
+  }
+  @keyframes rotate-a {
+    from {
+      transform: translate(-1em, -50%) rotate(0deg);
+    }
+    to {
+      transform: translate(-1em, -50%) rotate(360deg);
+    }
+  }
+  @keyframes rotate-b {
+    from {
+      transform: translate(-0.5em, -50%) rotate(0deg);
+    }
+    to {
+      transform: translate(-0.5em, -50%) rotate(360deg);
+    }
+  }
+  .reload-button {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    border: 0;
+    background-color: #21346e;
+    font-family: monospace;
+    color: rgba(15, 5, 20, 0.9);
+    border-radius: 8px;
+    padding: 1rem 2rem;
+    box-shadow: 0 0 1rem 0.25rem rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    outline: none;
+    font-weight: 900;
+  }
+  .reload-button:hover {
+    background-color: #3d7af5;
+    cursor: pointer;
+    box-shadow: 0 0 0.5rem 0.125rem rgba(0, 0, 0, 0.5);
+  }
+  .reload-button:active {
+    transform: translateY(0.5em);
+  }
+   
+  .signature {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+  }
+  .signature a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: monospace;
+  }
+  .signature img {
+    height: 2rem;
+    width: 2rem;
+    margin-left: 1em;
+    border-radius: 2rem;
+  }
