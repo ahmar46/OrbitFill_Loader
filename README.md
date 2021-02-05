@@ -1,4 +1,4 @@
-### A nice looking loading screen made for my Instagram page
+### A nice looking loading screen.
 
 ### Technologies Used:- HTML, CSS and Javascript.
 
