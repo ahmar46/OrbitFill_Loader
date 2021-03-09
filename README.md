@@ -1,4 +1,4 @@
-### It is nice looking Orbit fill loading screen.
+### It is nice looking Orbit filli loading screen.
 
 ### Technologies Used:- HTML, CSS and Javascript.
 
