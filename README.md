@@ -1,4 +1,4 @@
-### It is nice looking Oloading screen.
+### It is nice looking O loading screen.
 
 ### Technologies Used:- HTML, CSS and Javascript.
 
