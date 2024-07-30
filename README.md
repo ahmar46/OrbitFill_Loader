@@ -4,7 +4,7 @@
 
 ### Find me on Instagram- [@electrifyingcodes][Instagram].
 ### Find me on Youtube  - [@electrifyingcodes][Youtube].
-### Find me on Youtube  - [@electrifyingcodes][Youtub].
+### Find me on Youtube  - [@electrifyingcodes][Youtu].
 
 [Instagram]: https://www.instagram.com/electrifyingcodes
 [Youtube]: https://www.youtube.com/@electrifyingcodes
