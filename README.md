@@ -7,3 +7,4 @@
 
 [Instagram]: https://www.instagram.com/electrifyingcodes
 [Youtube]: https://www.youtube.com/@electrifyingcodes
+[Youtube]: https://www.youtube.com/@electrifyingcodes
