@@ -8,4 +8,4 @@
 
 [Instagram]: https://www.instagram.com/electrifyingcodes
 [Youtube]: https://www.youtube.com/@electrifyingcodes
-[T]: https://www.youtube.com/@electrifyingcodes
+[Te]: https://www.youtube.com/@electrifyingcodes
